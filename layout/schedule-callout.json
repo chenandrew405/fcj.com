@@ -1,0 +1,19 @@
+{
+  "panel": {
+    "paddingX": {
+      "mobile": "1.5rem",
+      "tablet": "1.75rem",
+      "desktop": "2rem"
+    },
+    "paddingY": {
+      "mobile": "1.5rem",
+      "tablet": "1.75rem",
+      "desktop": "2rem"
+    },
+    "borderRadius": {
+      "mobile": "1.75rem",
+      "tablet": "1.75rem",
+      "desktop": "1.75rem"
+    }
+  }
+}

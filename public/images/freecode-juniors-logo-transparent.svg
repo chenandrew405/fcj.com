@@ -1,0 +1,31 @@
+<svg width="1024" height="640" viewBox="0 0 1024 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fcj-gradient" x1="112" y1="56" x2="894" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A3C9A" />
+      <stop offset="0.58" stop-color="#175EFF" />
+      <stop offset="1" stop-color="#0F52E8" />
+    </linearGradient>
+    <linearGradient id="fcj-accent" x1="464" y1="174" x2="544" y2="324" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#48B7FF" />
+      <stop offset="1" stop-color="#187CFF" />
+    </linearGradient>
+  </defs>
+
+  <path d="M340 120H266C252.745 120 242 130.745 242 144V324" stroke="url(#fcj-gradient)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M684 120H758C771.255 120 782 130.745 782 144V324" stroke="url(#fcj-gradient)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+
+  <path d="M466 38C442 38 440 60 440 78V100C440 118 432 128 418 134C432 140 440 150 440 168V190C440 208 442 230 466 230" stroke="url(#fcj-gradient)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M558 38C582 38 584 60 584 78V100C584 118 592 128 606 134C592 140 584 150 584 168V190C584 208 582 230 558 230" stroke="url(#fcj-gradient)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+
+  <path d="M430 218L384 254L430 290" stroke="url(#fcj-gradient)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M594 218L640 254L594 290" stroke="url(#fcj-gradient)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M532 198L488 308" stroke="url(#fcj-accent)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+
+  <path d="M236 344H788C813.405 344 834 364.595 834 390C834 415.405 813.405 436 788 436H236C210.595 436 190 415.405 190 390C190 364.595 210.595 344 236 344Z" fill="url(#fcj-gradient)" />
+  <rect x="455" y="379" width="114" height="15" rx="7.5" fill="#F7FAFF" fill-opacity="0.96" />
+
+  <text x="512" y="548" text-anchor="middle" fill="url(#fcj-gradient)" font-family="Montserrat, Arial, sans-serif" font-size="134" font-weight="600" letter-spacing="-5">freecode</text>
+  <text x="512" y="626" text-anchor="middle" fill="url(#fcj-gradient)" font-family="Montserrat, Arial, sans-serif" font-size="82" font-weight="500" letter-spacing="9">juniors</text>
+  <path d="M94 586H248" stroke="url(#fcj-gradient)" stroke-width="10" stroke-linecap="round" />
+  <path d="M776 586H930" stroke="url(#fcj-gradient)" stroke-width="10" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,50 @@
+{
+  "stack": {
+    "gap": {
+      "mobile": "1.5rem",
+      "tablet": "1.75rem",
+      "desktop": "2rem"
+    }
+  },
+  "eyebrow": {
+    "fontSize": {
+      "mobile": "0.75rem",
+      "tablet": "0.75rem",
+      "desktop": "0.75rem"
+    },
+    "lineHeight": {
+      "mobile": "1rem",
+      "tablet": "1rem",
+      "desktop": "1rem"
+    }
+  },
+  "title": {
+    "fontSize": {
+      "mobile": "1.875rem",
+      "tablet": "2.35rem",
+      "desktop": "2.6rem"
+    },
+    "lineHeight": {
+      "mobile": "1.1",
+      "tablet": "1.1",
+      "desktop": "1.1"
+    }
+  },
+  "description": {
+    "fontSize": {
+      "mobile": "1rem",
+      "tablet": "1.125rem",
+      "desktop": "1.125rem"
+    },
+    "lineHeight": {
+      "mobile": "1.75rem",
+      "tablet": "1.9rem",
+      "desktop": "2rem"
+    },
+    "maxWidth": {
+      "mobile": "42rem",
+      "tablet": "46rem",
+      "desktop": "50rem"
+    }
+  }
+}

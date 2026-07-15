@@ -1,0 +1,54 @@
+{
+  "eyebrow": "Accessible Futures",
+  "title": "Computer science education that helps every child become a creator.",
+  "description": "Free Code Juniors introduces students to coding through thoughtful instruction, creative projects, and welcoming learning spaces where curiosity can grow into confidence.",
+  "primaryCta": {
+    "label": "Explore Programs",
+    "href": "/programs"
+  },
+  "secondaryCta": {
+    "label": "View Gallery",
+    "href": "/gallery"
+  },
+  "stats": [
+    {
+      "value": "Community-led",
+      "label": "Mission-driven learning",
+      "description": "Programs built around access, trust, and meaningful learning."
+    },
+    {
+      "value": "Student-first",
+      "label": "Accessible instruction",
+      "description": "Calm, guided teaching designed to meet students where they are."
+    },
+    {
+      "value": "Project-based",
+      "label": "Creative outcomes",
+      "description": "Students learn by building stories, games, prototypes, and new ideas."
+    }
+  ],
+  "heroImages": {
+    "primary": {
+      "src": "/images/workshop-1.jpg",
+      "alt": "Students gathered around laptops during a Free Code Juniors workshop."
+    },
+    "secondary": {
+      "src": "/images/team.jpg",
+      "alt": "Free Code Juniors student organizers standing beside a welcome display."
+    },
+    "tertiary": {
+      "src": "/images/poster.jpg",
+      "alt": "Free Code Juniors poster and welcome materials at an event."
+    }
+  },
+  "floatingCards": [
+    {
+      "title": "Creative confidence",
+      "description": "Students leave with projects they are proud to share."
+    },
+    {
+      "title": "Human-centered teaching",
+      "description": "Mentors and instructors make learning feel encouraging and clear."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "columns": [
+    {
+      "title": "Quick Links",
+      "links": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "About",
+          "href": "/about"
+        },
+        {
+          "label": "Programs",
+          "href": "/programs"
+        },
+        {
+          "label": "Gallery",
+          "href": "/gallery"
+        }
+      ]
+    },
+    {
+      "title": "Get Involved",
+      "links": [
+        {
+          "label": "Volunteer",
+          "href": "/#volunteer"
+        },
+        {
+          "label": "Contact",
+          "href": "/#contact"
+        }
+      ]
+    },
+    {
+      "title": "Contact",
+      "links": [
+        {
+          "label": "chenandrew405@gmail.com",
+          "href": "mailto:chenandrew405@gmail.com"
+        },
+        {
+          "label": "WhatsApp",
+          "href": "https://chat.whatsapp.com/CZe6xqoi8tILsWInLdKlrg?s=cl&p=i&ilr=1",
+          "external": true
+        },
+        {
+          "label": "WeChat",
+          "href": "/join-group/wechat"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2026 Free Code Juniors. All rights reserved.",
+  "nonprofitStatement": "Free Code Juniors is committed to making computer science education more accessible to every child."
+}

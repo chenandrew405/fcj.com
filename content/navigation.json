@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Programs",
+      "href": "/programs"
+    },
+    {
+      "label": "Schedule",
+      "href": "/schedule"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery"
+    },
+    {
+      "label": "Volunteer",
+      "href": "/#volunteer"
+    },
+    {
+      "label": "Contact",
+      "href": "/#contact"
+    }
+  ],
+  "primaryCta": {
+    "label": "Get Involved",
+    "href": "/#contact"
+  }
+}

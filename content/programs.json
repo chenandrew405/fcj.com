@@ -1,0 +1,37 @@
+{
+  "pageIntro": {
+    "eyebrow": "Programs",
+    "title": "Programs we are building for students now and next.",
+    "description": "Free Code Juniors currently offers one active program and is preparing a second course focused on Python and stronger AI prompting skills."
+  },
+  "sectionIntro": {
+    "eyebrow": "Programs",
+    "title": "Current and upcoming learning experiences.",
+    "description": "Our current focus is building a strong foundation in block coding and AI inferencing while preparing a combined Python and intermediate prompting course."
+  },
+  "programs": [
+    {
+      "id": "scratch-ai-inferencing",
+      "icon": "scratch-cat",
+      "title": "Introduction to Block Coding in Scratch and AI Inferencing",
+      "description": "Students begin with block coding in Scratch while learning how AI inferencing works through guided, beginner-friendly projects.",
+      "recommendedAge": "5+",
+      "duration": "Current program",
+      "skillLevel": "Beginner",
+      "image": "/images/workshop-1.jpg",
+      "badgeImage": "/images/scratch-logo-transparent.png"
+    },
+    {
+      "id": "python-prompting-skills",
+      "icon": "python",
+      "title": "Intro to Python and Intermediate Prompting Skills",
+      "description": "Students will learn Python fundamentals alongside intermediate prompting skills that strengthen problem solving, logic, and effective use of AI tools.",
+      "recommendedAge": "Coming Soon",
+      "duration": "Coming Soon",
+      "skillLevel": "Coming Soon",
+      "image": "/images/poster.jpg",
+      "badgeImage": "/images/python-logo.webp",
+      "imagePlaceholderText": "Coming soon!"
+    }
+  ]
+}

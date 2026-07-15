@@ -1,0 +1,69 @@
+{
+  "section": {
+    "paddingTop": {
+      "mobile": "4.5rem",
+      "tablet": "5rem",
+      "desktop": "5.5rem"
+    },
+    "paddingBottom": {
+      "mobile": "4rem",
+      "tablet": "4.5rem",
+      "desktop": "5rem"
+    }
+  },
+  "grid": {
+    "gap": {
+      "mobile": "2.5rem",
+      "tablet": "3rem",
+      "desktop": "3.5rem"
+    }
+  },
+  "stack": {
+    "gap": {
+      "mobile": "1.25rem",
+      "tablet": "1.5rem",
+      "desktop": "1.5rem"
+    }
+  },
+  "panel": {
+    "paddingX": {
+      "mobile": "1rem",
+      "tablet": "1.25rem",
+      "desktop": "1.25rem"
+    },
+    "paddingY": {
+      "mobile": "0.75rem",
+      "tablet": "0.875rem",
+      "desktop": "1rem"
+    },
+    "borderRadius": {
+      "mobile": "1.5rem",
+      "tablet": "1.5rem",
+      "desktop": "1.5rem"
+    }
+  },
+  "logoPrimary": {
+    "width": {
+      "mobile": "9.5rem",
+      "tablet": "10rem",
+      "desktop": "10.5rem"
+    },
+    "height": {
+      "mobile": "2rem",
+      "tablet": "2.25rem",
+      "desktop": "2.25rem"
+    }
+  },
+  "logoSecondary": {
+    "width": {
+      "mobile": "8.25rem",
+      "tablet": "9rem",
+      "desktop": "9.75rem"
+    },
+    "height": {
+      "mobile": "5.25rem",
+      "tablet": "5.625rem",
+      "desktop": "6rem"
+    }
+  }
+}

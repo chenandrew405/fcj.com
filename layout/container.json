@@ -1,0 +1,14 @@
+{
+  "container": {
+    "maxWidth": {
+      "mobile": "80rem",
+      "tablet": "80rem",
+      "desktop": "80rem"
+    },
+    "paddingX": {
+      "mobile": "1.25rem",
+      "tablet": "1.75rem",
+      "desktop": "2.25rem"
+    }
+  }
+}

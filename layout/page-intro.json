@@ -1,0 +1,74 @@
+{
+  "section": {
+    "paddingTop": {
+      "mobile": "6.5rem",
+      "tablet": "7.5rem",
+      "desktop": "8rem"
+    },
+    "paddingBottom": {
+      "mobile": "3rem",
+      "tablet": "3.5rem",
+      "desktop": "4rem"
+    }
+  },
+  "panel": {
+    "paddingX": {
+      "mobile": "1.75rem",
+      "tablet": "2.5rem",
+      "desktop": "3rem"
+    },
+    "paddingY": {
+      "mobile": "2rem",
+      "tablet": "2.5rem",
+      "desktop": "3rem"
+    },
+    "borderRadius": {
+      "mobile": "2rem",
+      "tablet": "2rem",
+      "desktop": "2rem"
+    }
+  },
+  "stack": {
+    "gap": {
+      "mobile": "1.125rem",
+      "tablet": "1.375rem",
+      "desktop": "1.625rem"
+    }
+  },
+  "eyebrow": {
+    "fontSize": {
+      "mobile": "0.75rem",
+      "tablet": "0.75rem",
+      "desktop": "0.75rem"
+    },
+    "lineHeight": {
+      "mobile": "1rem",
+      "tablet": "1rem",
+      "desktop": "1rem"
+    }
+  },
+  "title": {
+    "fontSize": {
+      "mobile": "2.25rem",
+      "tablet": "3rem",
+      "desktop": "3.25rem"
+    },
+    "lineHeight": {
+      "mobile": "1.05",
+      "tablet": "1.05",
+      "desktop": "1.05"
+    }
+  },
+  "description": {
+    "fontSize": {
+      "mobile": "1.125rem",
+      "tablet": "1.125rem",
+      "desktop": "1.125rem"
+    },
+    "lineHeight": {
+      "mobile": "1.85rem",
+      "tablet": "1.95rem",
+      "desktop": "2rem"
+    }
+  }
+}

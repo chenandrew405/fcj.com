@@ -1,0 +1,71 @@
+{
+  "pageIntro": {
+    "eyebrow": "Schedule",
+    "title": "Upcoming programs and community learning experiences.",
+    "description": "A clear, family-friendly schedule makes it easy to find the right program, understand availability, and plan ahead with confidence."
+  },
+  "sectionIntro": {
+    "eyebrow": "Program Schedule",
+    "title": "Designed for clarity, flexibility, and momentum.",
+    "description": "As Freecode Juniors grows, so does the schedule."
+  },
+  "items": [
+    {
+      "program": "Introduction to Block Coding in Scratch and AI Inferencing",
+      "day": "July 26, Sunday",
+      "time": "10:00 AM - 11:30 AM",
+      "place": "NSU Alvin Sherman Library",
+      "instructor": "Andrew Chen",
+      "availability": "Join Group",
+      "availabilityHref": "/join-group"
+    },
+    {
+      "program": "Coming Soon",
+      "day": "Coming Soon",
+      "time": "Coming Soon",
+      "place": "Coming Soon",
+      "instructor": "Coming Soon",
+      "availability": "Coming Soon"
+    },
+    {
+      "program": "Coming Soon",
+      "day": "Coming Soon",
+      "time": "Coming Soon",
+      "place": "Coming Soon",
+      "instructor": "Coming Soon",
+      "availability": "Coming Soon"
+    },
+    {
+      "program": "Coming Soon",
+      "day": "Coming Soon",
+      "time": "Coming Soon",
+      "place": "Coming Soon",
+      "instructor": "Coming Soon",
+      "availability": "Coming Soon"
+    },
+    {
+      "program": "Coming Soon",
+      "day": "Coming Soon",
+      "time": "Coming Soon",
+      "place": "Coming Soon",
+      "instructor": "Coming Soon",
+      "availability": "Coming Soon"
+    },
+    {
+      "program": "Coming Soon",
+      "day": "Coming Soon",
+      "time": "Coming Soon",
+      "place": "Coming Soon",
+      "instructor": "Coming Soon",
+      "availability": "Coming Soon"
+    }
+  ],
+  "callout": {
+    "title": "Need a custom workshop or school partnership?",
+    "description": "Free Code Juniors can also support community events, school collaborations, and special workshops designed around your learners and goals.",
+    "cta": {
+      "label": "Contact the team",
+      "href": "/#contact"
+    }
+  }
+}

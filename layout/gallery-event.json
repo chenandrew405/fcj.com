@@ -1,0 +1,21 @@
+{
+  "section": {
+    "paddingTop": {
+      "mobile": "1.25rem",
+      "tablet": "1.75rem",
+      "desktop": "2rem"
+    },
+    "paddingBottom": {
+      "mobile": "5rem",
+      "tablet": "5.5rem",
+      "desktop": "6rem"
+    }
+  },
+  "stack": {
+    "gap": {
+      "mobile": "1rem",
+      "tablet": "1.25rem",
+      "desktop": "1.5rem"
+    }
+  }
+}

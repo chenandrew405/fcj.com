@@ -1,0 +1,117 @@
+{
+  "pageIntro": {
+    "eyebrow": "Gallery",
+    "title": "Moments of curiosity, creativity, and community.",
+    "description": "Explore Free Code Juniors through event-based galleries that document how students learn, collaborate, and share what they build."
+  },
+  "sectionIntro": {
+    "eyebrow": "Event Archive",
+    "title": "Every event keeps its own story.",
+    "description": "Examine the brilliance of the FCJ model."
+  },
+  "events": [
+    {
+      "id": "may-25-session",
+      "title": "May 25 Session",
+      "description": "An early FCJ session focused on warm introductions, collaborative learning, and helping students settle into the creative rhythm of class.",
+      "date": "May 25",
+      "location": "Session Gallery",
+      "coverImage": "/gallery/may-25-session/cover.jpg",
+      "images": [
+        {
+          "src": "/gallery/may-25-session/1.jpg",
+          "alt": "Students beginning the May 25 FCJ lesson together.",
+          "caption": "Students settled in and began learning together with curiosity and focus."
+        },
+        {
+          "src": "/gallery/may-25-session/2.jpg",
+          "alt": "A candid classroom moment from the May 25 FCJ session.",
+          "caption": "This session captured the supportive classroom tone FCJ is building from the start."
+        },
+        {
+          "src": "/gallery/may-25-session/3.jpg",
+          "alt": "Students and mentors during the May 25 session.",
+          "caption": "Students worked through the lesson at a pace that encouraged questions and confidence."
+        },
+        {
+          "src": "/gallery/may-25-session/4.jpg",
+          "alt": "A classroom view from the May 25 FCJ session.",
+          "caption": "The May session showed how FCJ blends structure, encouragement, and hands-on learning."
+        },
+        {
+          "src": "/gallery/may-25-session/5.jpg",
+          "alt": "A closing moment from the May 25 session.",
+          "caption": "By the end of the session, students were more comfortable creating and exploring together."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "june-25-session",
+      "title": "June 25 Session",
+      "description": "The June session captured a fuller FCJ lesson in motion, with live demonstrations, student engagement, and visible momentum across the room.",
+      "date": "June 25",
+      "location": "Session Gallery",
+      "coverImage": "/gallery/june-25-session/cover.jpg",
+      "images": [
+        {
+          "src": "/gallery/june-25-session/1.jpg",
+          "alt": "Students and mentors during the June 25 FCJ session.",
+          "caption": "The June session opened with strong energy and clear participation across the room."
+        },
+        {
+          "src": "/gallery/june-25-session/2.jpg",
+          "alt": "A lesson moment from the June 25 FCJ session.",
+          "caption": "Students followed the lesson while building confidence through guided practice."
+        },
+        {
+          "src": "/gallery/june-25-session/3.jpg",
+          "alt": "Students working through tasks during the June 25 session.",
+          "caption": "This session reflected the FCJ model at work: clear instruction, active learning, and peer support."
+        },
+        {
+          "src": "/gallery/june-25-session/4.jpg",
+          "alt": "A classroom view from the June 25 FCJ session.",
+          "caption": "Students stayed engaged as the lesson moved from explanation into hands-on exploration."
+        },
+        {
+          "src": "/gallery/june-25-session/5.jpg",
+          "alt": "Participants during the June 25 FCJ session.",
+          "caption": "Moments like this show how the lesson environment stays structured and welcoming at the same time."
+        },
+        {
+          "src": "/gallery/june-25-session/6.jpg",
+          "alt": "Another candid view of the June 25 session.",
+          "caption": "The room reflected steady momentum as students kept building and following along."
+        },
+        {
+          "src": "/gallery/june-25-session/7.jpg",
+          "alt": "A later moment in the June 25 FCJ lesson.",
+          "caption": "The June session highlights how FCJ lessons balance guidance, movement, and student ownership."
+        }
+      ],
+      "videos": [
+        {
+          "src": "/gallery/june-25-session/1.mp4",
+          "title": "June 25 Session Video 1",
+          "caption": "A live classroom view showing the pace and flow of the June session."
+        },
+        {
+          "src": "/gallery/june-25-session/2.mp4",
+          "title": "June 25 Session Video 2",
+          "caption": "Students stayed engaged as the lesson progressed and the room became more collaborative."
+        },
+        {
+          "src": "/gallery/june-25-session/3.mp4",
+          "title": "June 25 Session Video 3",
+          "caption": "This clip captures the classroom energy that makes FCJ lessons feel active and welcoming."
+        },
+        {
+          "src": "/gallery/june-25-session/4.mp4",
+          "title": "June 25 Session Video 4",
+          "caption": "A final lesson clip showing the real-time rhythm of the June session."
+        }
+      ]
+    }
+  ]
+}

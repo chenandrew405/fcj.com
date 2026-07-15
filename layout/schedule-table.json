@@ -1,0 +1,21 @@
+{
+  "section": {
+    "paddingTop": {
+      "mobile": "1.25rem",
+      "tablet": "1.75rem",
+      "desktop": "2rem"
+    },
+    "paddingBottom": {
+      "mobile": "3rem",
+      "tablet": "3.5rem",
+      "desktop": "4rem"
+    }
+  },
+  "panel": {
+    "borderRadius": {
+      "mobile": "1.75rem",
+      "tablet": "1.75rem",
+      "desktop": "1.75rem"
+    }
+  }
+}

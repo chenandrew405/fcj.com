@@ -1,0 +1,43 @@
+{
+  "section": {
+    "paddingTop": {
+      "mobile": "4.5rem",
+      "tablet": "5rem",
+      "desktop": "5.5rem"
+    },
+    "paddingBottom": {
+      "mobile": "4.5rem",
+      "tablet": "5rem",
+      "desktop": "5.5rem"
+    }
+  },
+  "panel": {
+    "paddingX": {
+      "mobile": "1.75rem",
+      "tablet": "2.25rem",
+      "desktop": "2.75rem"
+    },
+    "paddingY": {
+      "mobile": "1.75rem",
+      "tablet": "2.25rem",
+      "desktop": "2.75rem"
+    },
+    "borderRadius": {
+      "mobile": "2rem",
+      "tablet": "2rem",
+      "desktop": "2rem"
+    }
+  },
+  "grid": {
+    "gap": {
+      "mobile": "2rem",
+      "tablet": "2.5rem",
+      "desktop": "3rem"
+    },
+    "columns": {
+      "mobile": "minmax(0, 1fr)",
+      "tablet": "minmax(0, 1fr)",
+      "desktop": "1fr 0.9fr"
+    }
+  }
+}

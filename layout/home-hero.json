@@ -1,0 +1,134 @@
+{
+  "section": {
+    "paddingTop": {
+      "mobile": "7.5rem",
+      "tablet": "8.5rem",
+      "desktop": "9.5rem"
+    },
+    "paddingBottom": {
+      "mobile": "5.5rem",
+      "tablet": "6.5rem",
+      "desktop": "7.75rem"
+    }
+  },
+  "grid": {
+    "gap": {
+      "mobile": "3.5rem",
+      "tablet": "4.5rem",
+      "desktop": "5.5rem"
+    },
+    "columns": {
+      "mobile": "minmax(0, 1fr)",
+      "tablet": "minmax(0, 1fr)",
+      "desktop": "0.92fr 1.08fr"
+    }
+  },
+  "stack": {
+    "gap": {
+      "mobile": "2rem",
+      "tablet": "2.5rem",
+      "desktop": "3rem"
+    }
+  },
+  "stackSecondary": {
+    "gap": {
+      "mobile": "1.125rem",
+      "tablet": "1.5rem",
+      "desktop": "1.75rem"
+    }
+  },
+  "card": {
+    "gap": {
+      "mobile": "1.125rem",
+      "tablet": "1.25rem",
+      "desktop": "1.5rem"
+    }
+  },
+  "gridSecondary": {
+    "gap": {
+      "mobile": "1rem",
+      "tablet": "1rem",
+      "desktop": "1.25rem"
+    },
+    "columns": {
+      "mobile": "minmax(0, 1fr)",
+      "tablet": "repeat(3, minmax(0, 1fr))",
+      "desktop": "repeat(3, minmax(0, 1fr))"
+    }
+  },
+  "media": {
+    "gap": {
+      "mobile": "1.5rem",
+      "tablet": "1.75rem",
+      "desktop": "2rem"
+    }
+  },
+  "panel": {
+    "paddingX": {
+      "mobile": "1.5rem",
+      "tablet": "2rem",
+      "desktop": "2.5rem"
+    },
+    "paddingY": {
+      "mobile": "1.5rem",
+      "tablet": "2rem",
+      "desktop": "2.5rem"
+    },
+    "borderRadius": {
+      "mobile": "2rem",
+      "tablet": "2.25rem",
+      "desktop": "2.25rem"
+    }
+  },
+  "cardSecondary": {
+    "paddingX": {
+      "mobile": "1.25rem",
+      "tablet": "1.75rem",
+      "desktop": "2rem"
+    },
+    "paddingY": {
+      "mobile": "1.125rem",
+      "tablet": "1rem",
+      "desktop": "1rem"
+    },
+    "borderRadius": {
+      "mobile": "1.5rem",
+      "tablet": "1.5rem",
+      "desktop": "1.5rem"
+    }
+  },
+  "title": {
+    "fontSize": {
+      "mobile": "3.1rem",
+      "tablet": "4rem",
+      "desktop": "4.85rem"
+    },
+    "lineHeight": {
+      "mobile": "1.05",
+      "tablet": "1.05",
+      "desktop": "1.05"
+    },
+    "maxWidth": {
+      "mobile": "23rem",
+      "tablet": "36rem",
+      "desktop": "41rem"
+    }
+  },
+  "description": {
+    "fontSize": {
+      "mobile": "1.125rem",
+      "tablet": "1.25rem",
+      "desktop": "1.3rem"
+    },
+    "lineHeight": {
+      "mobile": "1.9rem",
+      "tablet": "2rem",
+      "desktop": "2.1rem"
+    },
+    "maxWidth": {
+      "mobile": "25rem",
+      "tablet": "35rem",
+      "desktop": "39rem"
+    }
+  }
+}

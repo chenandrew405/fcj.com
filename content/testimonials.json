@@ -1,0 +1,27 @@
+{
+  "sectionIntro": {
+    "eyebrow": "Testimonials",
+    "title": "Trusted by students, families, and volunteers.",
+    "description": "The most meaningful measure of impact is how students feel when they leave: excited, proud, and ready to keep building."
+  },
+  "items": [
+    {
+      "name": "Student Participant",
+      "role": "Scratch Foundations",
+      "quote": "I liked that we could build our own ideas and still get help when we got stuck. It made coding feel fun instead of scary.",
+      "type": "Student"
+    },
+    {
+      "name": "Parent Supporter",
+      "role": "Family Perspective",
+      "quote": "The program felt organized, welcoming, and encouraging. My child left talking about projects instead of worrying about whether they were good enough.",
+      "type": "Parent"
+    },
+    {
+      "name": "Volunteer Mentor",
+      "role": "Community Service Mentor",
+      "quote": "Free Code Juniors creates the kind of learning environment where students feel safe asking questions and genuinely proud of their progress.",
+      "type": "Volunteer"
+    }
+  ]
+}

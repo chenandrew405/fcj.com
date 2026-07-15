@@ -1,0 +1,63 @@
+{
+  "pageIntro": {
+    "eyebrow": "About",
+    "title": "A nonprofit movement helping children see technology as something they can shape.",
+    "description": "Free Code Juniors combines accessible teaching, creative project work, and community support so students do not just learn coding concepts, they build belief in their own potential."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To make computer science education accessible to every child through thoughtful instruction, creative learning experiences, and a nonprofit model centered on inclusion and encouragement."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "description": "A future where every young learner, regardless of background or experience, has the opportunity to become an innovator, engineer, builder, and problem-solver."
+  },
+  "whyCoding": {
+    "title": "Why coding matters",
+    "paragraphs": [
+      "Coding gives students more than a technical skill. It teaches logic, persistence, collaboration, and the habit of turning ideas into something real.",
+      "When children build games, stories, apps, and prototypes, they discover that technology is not just something they consume. It is something they can create with purpose and imagination.",
+      "Those early experiences matter. They help young people see themselves as capable problem-solvers long before they make choices about school, college, or career paths."
+    ]
+  },
+  "whyNonprofit": {
+    "title": "Why Nonprofit education matters to us",
+    "paragraphs": [
+      "A nonprofit model keeps the focus where it belongs: access, community impact, and meaningful student growth.",
+      "It allows Free Code Juniors to invest in welcoming learning spaces, volunteer mentorship, and accessible teaching practices instead of optimizing for exclusivity.",
+      "That mission-first approach makes it easier to meet families where they are and open doors for more students to participate with confidence."
+    ]
+  },
+  "storyImages": [
+    {
+      "src": "/images/classroom.jpg",
+      "alt": "A classroom prepared for collaborative computer science learning."
+    },
+    {
+      "src": "/images/about-why-nonprofit.jpg",
+      "alt": "Students and volunteers gathered during a Free Code Juniors session."
+    }
+  ],
+  "team": {
+    "title": "Student Instructors",
+    "description": "A student-led volunteer structure helps Free Code Juniors stay personal, welcoming, and community-centered.",
+    "members": [
+      {
+        "name": "Andrew Chen",
+        "role": "Student Instructor",
+        "bio": "Creates the class materials and gives hands-on coding sessions.",
+        "image": "/images/zibo-nie.jpg",
+        "email": "chenandrew405@gmail.com",
+        "phone": "7543442298"
+      },
+      {
+        "name": "Zibo Nie",
+        "role": "Student Instructor",
+        "bio": "Assists with teaching and provides much needed tech support to keep the class moving.",
+        "image": "/images/andrew-chen.jpg",
+        "email": "niezibo2011@gmail.com",
+        "phone": "5616433791"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "container": {
+    "maxWidth": {
+      "mobile": "80rem",
+      "tablet": "80rem",
+      "desktop": "80rem"
+    },
+    "paddingX": {
+      "mobile": "1.25rem",
+      "tablet": "1.75rem",
+      "desktop": "2.25rem"
+    }
+  },
+  "panel": {
+    "paddingX": {
+      "mobile": "0.875rem",
+      "tablet": "0.95rem",
+      "desktop": "0.85rem"
+    },
+    "paddingY": {
+      "mobile": "0.75rem",
+      "tablet": "0.875rem",
+      "desktop": "0.875rem"
+    },
+    "borderRadius": {
+      "mobile": "9999px",
+      "tablet": "9999px",
+      "desktop": "9999px"
+    }
+  },
+  "logoPrimary": {
+    "width": {
+      "mobile": "3.5rem",
+      "tablet": "3.75rem",
+      "desktop": "4rem"
+    },
+    "height": {
+      "mobile": "3.5rem",
+      "tablet": "3.75rem",
+      "desktop": "4rem"
+    },
+    "borderRadius": {
+      "mobile": "9999px",
+      "tablet": "9999px",
+      "desktop": "9999px"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Free Code Juniors",
+  "shortName": "FCJ",
+  "title": "Free Code Juniors | Accessible Computer Science Education for Every Child",
+  "description": "Free Code Juniors builds accessible, inspiring computer science experiences that help children become creators, problem-solvers, and future innovators.",
+  "url": "https://fcj.org",
+  "missionStatement": "We make computer science education accessible, joyful, and confidence-building so every child can see themselves as a creator.",
+  "organization": {
+    "legalName": "Free Code Juniors",
+    "tagline": "Opening doors through accessible computer science education.",
+    "email": "chenandrew405@gmail.com",
+    "location": "Community-based workshops and school partnerships",
+    "nonprofitStatement": "Free Code Juniors creates accessible computer science learning opportunities through community programs, volunteer mentorship, and student-centered instruction.",
+    "socialLinks": [
+      {
+        "label": "WhatsApp",
+        "href": "https://chat.whatsapp.com/CZe6xqoi8tILsWInLdKlrg?s=cl&p=i&ilr=1",
+        "icon": "whatsapp",
+        "external": true
+      },
+      {
+        "label": "WeChat",
+        "href": "/join-group/wechat",
+        "icon": "wechat"
+      },
+      {
+        "label": "Email",
+        "href": "mailto:chenandrew405@gmail.com",
+        "icon": "mail"
+      }
+    ]
+  },
+  "sectionLabels": {
+    "about": "About",
+    "programs": "Programs",
+    "schedule": "Schedule",
+    "gallery": "Gallery",
+    "testimonials": "Testimonials",
+    "volunteer": "Volunteer",
+    "contact": "Contact"
+  },
+  "volunteer": {
+    "eyebrow": "Volunteer",
+    "title": "Help the next generation build confidence through technology.",
+    "description": "Mentors make our programs more personal, more supportive, and more accessible. Volunteers guide students through challenges, celebrate progress, and create the kind of welcoming environment every learner deserves.",
+    "reasons": [
+      "Earn meaningful community service hours while helping students build real projects.",
+      "Support inclusive classrooms where patience, encouragement, and clear instruction matter.",
+      "Grow your own leadership, communication, and mentoring skills in a mission-driven nonprofit setting."
+    ],
+    "cta": {
+      "label": "Become a Volunteer",
+      "href": "#contact"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Partner with us, volunteer with us, or bring a program to your community.",
+    "description": "We would love to hear from schools, families, volunteers, sponsors, and community organizations interested in making computer science education more accessible.",
+    "details": [
+      {
+        "label": "Email",
+        "value": "chenandrew405@gmail.com",
+        "href": "mailto:chenandrew405@gmail.com"
+      },
+      {
+        "label": "Organization",
+        "value": "Free Code Juniors",
+        "href": null
+      },
+      {
+        "label": "Focus",
+        "value": "Accessible nonprofit computer science education",
+        "href": null
+      }
+    ],
+    "form": {
+      "nameLabel": "Your name",
+      "emailLabel": "Email address",
+      "messageLabel": "How can we help?",
+      "submitLabel": "Send message",
+      "disclaimer": "Thank you for contacting us!"
+    }
+  }
+}
