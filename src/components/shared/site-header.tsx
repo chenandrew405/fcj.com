@@ -30,6 +30,8 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
     Volunteer: HeartHandshake,
     Contact: Mail,
   };
+  const currentItem = navigation.items.find((item) => item.href === pathname) ?? navigation.items.find((item) => item.href === '/') ?? navigation.items[0];
+  const CurrentIcon = navIcons[currentItem?.label ?? 'Home'] ?? Home;
   const mobileBottomLabels = new Set(['About', 'Programs', 'Schedule', 'Gallery']);
   const mobileBottomItems = navigation.items.filter((item) => mobileBottomLabels.has(item.label));
   const mobileTopItems = navigation.items.filter((item) => !mobileBottomLabels.has(item.label));
@@ -64,6 +66,13 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
               <Image alt="Free Code Juniors" className="object-contain object-center" fill sizes="72px" src="/images/freecode-juniors-logo.png" style={{ transform: 'scale(1.12)' }} />
             </div>
           </Link>
+
+          <div className="flex flex-1 items-center justify-center px-2 lg:flex-none lg:px-0">
+            <div className="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/80 px-3 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur-sm">
+              <CurrentIcon className="size-4 text-[#2563EB]" aria-hidden="true" />
+              <span className="truncate">{currentItem?.label ?? 'Home'}</span>
+            </div>
+          </div>
 
           <div className="hidden items-center gap-1.5 lg:flex">
             <nav className="flex items-center gap-0.5">
