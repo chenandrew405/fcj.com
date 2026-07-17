@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { BookOpen, Calendar, HeartHandshake, Home, Images, Info, Mail, Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
 import { Button } from '@/components/ui/button';
@@ -21,6 +21,15 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const navIcons: Record<string, typeof Home> = {
+    Home,
+    About: Info,
+    Programs: BookOpen,
+    Schedule: Calendar,
+    Gallery: Images,
+    Volunteer: HeartHandshake,
+    Contact: Mail,
+  };
   const mobileBottomLabels = new Set(['About', 'Programs', 'Schedule', 'Gallery']);
   const mobileBottomItems = navigation.items.filter((item) => mobileBottomLabels.has(item.label));
   const mobileTopItems = navigation.items.filter((item) => !mobileBottomLabels.has(item.label));
@@ -82,11 +91,12 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
 
           <button
             aria-expanded={menuOpen}
-            aria-label="Toggle navigation"
-            className="inline-flex size-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-900 lg:hidden"
+            aria-label="Open menu"
+            className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 shadow-sm lg:hidden"
             onClick={() => setMenuOpen((value) => !value)}
             type="button"
           >
+            <span>{menuOpen ? 'Close' : 'Menu'}</span>
             {menuOpen ? <X className="size-4" aria-hidden="true" /> : <Menu className="size-4" aria-hidden="true" />}
           </button>
         </div>
@@ -96,15 +106,25 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
         <div className="px-5 pb-4 sm:px-6 lg:hidden">
           <div className="mx-auto max-w-7xl rounded-[1.75rem] border border-white/80 bg-white/90 p-4 shadow-[0_30px_60px_-40px_rgba(15,23,42,0.45)] backdrop-blur-2xl">
             <nav className="flex flex-col gap-4">
+              <div className="rounded-2xl bg-slate-50 px-4 py-3 text-sm font-medium text-slate-600">
+                This is the Menu
+              </div>
               <div className="grid grid-cols-2 gap-2">
                 {mobileTopItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    className="rounded-2xl px-4 py-3 text-center text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-950"
-                    href={item.href}
-                  >
-                    {item.label}
-                  </Link>
+                  (() => {
+                    const Icon = navIcons[item.label] ?? Menu;
+
+                    return (
+                      <Link
+                        key={item.href}
+                        className="flex items-center justify-center gap-2 rounded-2xl px-4 py-3 text-center text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-950"
+                        href={item.href}
+                      >
+                        <Icon className="size-4" aria-hidden="true" />
+                        <span>{item.label}</span>
+                      </Link>
+                    );
+                  })()
                 ))}
                 <Button asChild className="h-auto min-h-12 w-full">
                   <Link href={navigation.primaryCta.href}>{navigation.primaryCta.label}</Link>
@@ -113,13 +133,20 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
               <div className="border-t border-slate-200/80 pt-4">
                 <div className="grid grid-cols-2 gap-2">
                   {mobileBottomItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      className="rounded-2xl px-4 py-3 text-center text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-950"
-                      href={item.href}
-                    >
-                      {item.label}
-                    </Link>
+                    (() => {
+                      const Icon = navIcons[item.label] ?? Menu;
+
+                      return (
+                        <Link
+                          key={item.href}
+                          className="flex items-center justify-center gap-2 rounded-2xl px-4 py-3 text-center text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-950"
+                          href={item.href}
+                        >
+                          <Icon className="size-4" aria-hidden="true" />
+                          <span>{item.label}</span>
+                        </Link>
+                      );
+                    })()
                   ))}
                 </div>
               </div>
