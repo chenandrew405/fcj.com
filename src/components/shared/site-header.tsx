@@ -3,9 +3,10 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { BookOpen, Calendar, HeartHandshake, Home, Images, Info, Mail, Menu, X } from 'lucide-react';
+import { BookOpen, Calendar, HeartHandshake, Home, Images, Info, Mail, Menu, type LucideIcon, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
+import { TerminalType } from '@/components/shared/terminal-type';
 import { Button } from '@/components/ui/button';
 import { headerLayout } from '@/lib/layout';
 import { getLayoutBoxStyle } from '@/lib/layout-utils';
@@ -21,7 +22,8 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const navIcons: Record<string, typeof Home> = {
+  const [currentLabel, setCurrentLabel] = useState('Home');
+  const navIcons: Record<string, LucideIcon> = {
     Home,
     About: Info,
     Programs: BookOpen,
@@ -29,12 +31,88 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
     Gallery: Images,
     Volunteer: HeartHandshake,
     Contact: Mail,
+    'Get Involved': HeartHandshake,
   };
-  const currentItem = navigation.items.find((item) => item.href === pathname) ?? navigation.items.find((item) => item.href === '/') ?? navigation.items[0];
-  const CurrentIcon = navIcons[currentItem?.label ?? 'Home'] ?? Home;
+  const routeLabel = (() => {
+    if (pathname === '/') {
+      return 'Home';
+    }
+
+    if (pathname.startsWith('/about')) {
+      return 'About';
+    }
+
+    if (pathname.startsWith('/programs')) {
+      return 'Programs';
+    }
+
+    if (pathname.startsWith('/schedule')) {
+      return 'Schedule';
+    }
+
+    if (pathname.startsWith('/gallery')) {
+      return 'Gallery';
+    }
+
+    if (pathname.startsWith('/join-group')) {
+      return 'Contact';
+    }
+
+    return 'Home';
+  })();
+  const CurrentIcon = navIcons[currentLabel] ?? Home;
   const mobileBottomLabels = new Set(['About', 'Programs', 'Schedule', 'Gallery']);
   const mobileBottomItems = navigation.items.filter((item) => mobileBottomLabels.has(item.label));
   const mobileTopItems = navigation.items.filter((item) => !mobileBottomLabels.has(item.label));
+
+  useEffect(() => {
+    if (pathname !== '/') {
+      setCurrentLabel(routeLabel);
+      return;
+    }
+
+    const sectionOrder: Array<{ id: string; label: string }> = [
+      { id: 'about', label: 'About' },
+      { id: 'programs', label: 'Programs' },
+      { id: 'schedule', label: 'Schedule' },
+      { id: 'gallery', label: 'Gallery' },
+      { id: 'volunteer', label: 'Volunteer' },
+      { id: 'contact', label: 'Contact' },
+    ];
+
+    const updateHomeLabel = () => {
+      const offset = 170;
+      const scrollPosition = window.scrollY + offset;
+      let nextLabel = 'Home';
+
+      for (const section of sectionOrder) {
+        const element = document.getElementById(section.id);
+
+        if (!element) {
+          continue;
+        }
+
+        if (element.offsetTop <= scrollPosition) {
+          nextLabel = section.label;
+        }
+      }
+
+      if (window.scrollY < 120) {
+        nextLabel = 'Home';
+      }
+
+      setCurrentLabel(nextLabel);
+    };
+
+    updateHomeLabel();
+    window.addEventListener('scroll', updateHomeLabel, { passive: true });
+    window.addEventListener('hashchange', updateHomeLabel);
+
+    return () => {
+      window.removeEventListener('scroll', updateHomeLabel);
+      window.removeEventListener('hashchange', updateHomeLabel);
+    };
+  }, [pathname, routeLabel]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 14);
@@ -48,6 +126,18 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
   useEffect(() => {
     setMenuOpen(false);
   }, [pathname]);
+
+  const handleSelection = (label: string) => {
+    setCurrentLabel(label);
+  };
+
+  const isNavActive = (label: string, href: string) => {
+    if (pathname === '/') {
+      return currentLabel === label && (href === '/' || href.startsWith('/#'));
+    }
+
+    return routeLabel === label;
+  };
 
   return (
     <header className="fixed inset-x-0 top-0 z-40">
@@ -70,14 +160,14 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
           <div className="flex flex-1 items-center justify-center px-2 lg:flex-none lg:px-0">
             <div className="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/80 px-3 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur-sm">
               <CurrentIcon className="size-4 text-[#2563EB]" aria-hidden="true" />
-              <span className="truncate">{currentItem?.label ?? 'Home'}</span>
+              <TerminalType key={currentLabel} className="truncate" delay={0} text={currentLabel} />
             </div>
           </div>
 
           <div className="hidden items-center gap-1.5 lg:flex">
             <nav className="flex items-center gap-0.5">
               {navigation.items.map((item) => {
-                const active = item.href === pathname;
+                const active = isNavActive(item.label, item.href);
 
                 return (
                   <Link
@@ -87,6 +177,7 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
                       active ? 'bg-slate-950 text-white' : 'text-slate-600 hover:bg-slate-100 hover:text-slate-950',
                     )}
                     href={item.href}
+                    onClick={() => handleSelection(item.label)}
                   >
                     {item.label}
                   </Link>
@@ -94,7 +185,7 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
               })}
             </nav>
             <Button asChild size="sm">
-              <Link href={navigation.primaryCta.href}>{navigation.primaryCta.label}</Link>
+              <Link href={navigation.primaryCta.href} onClick={() => handleSelection(navigation.primaryCta.label)}>{navigation.primaryCta.label}</Link>
             </Button>
           </div>
 
@@ -128,6 +219,7 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
                         key={item.href}
                         className="flex items-center justify-center gap-2 rounded-2xl px-4 py-3 text-center text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-950"
                         href={item.href}
+                        onClick={() => handleSelection(item.label)}
                       >
                         <Icon className="size-4" aria-hidden="true" />
                         <span>{item.label}</span>
@@ -136,7 +228,7 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
                   })()
                 ))}
                 <Button asChild className="h-auto min-h-12 w-full">
-                  <Link href={navigation.primaryCta.href}>{navigation.primaryCta.label}</Link>
+                  <Link href={navigation.primaryCta.href} onClick={() => handleSelection(navigation.primaryCta.label)}>{navigation.primaryCta.label}</Link>
                 </Button>
               </div>
               <div className="border-t border-slate-200/80 pt-4">
@@ -150,6 +242,7 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
                           key={item.href}
                           className="flex items-center justify-center gap-2 rounded-2xl px-4 py-3 text-center text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-950"
                           href={item.href}
+                          onClick={() => handleSelection(item.label)}
                         >
                           <Icon className="size-4" aria-hidden="true" />
                           <span>{item.label}</span>
