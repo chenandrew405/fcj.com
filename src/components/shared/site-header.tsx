@@ -21,6 +21,9 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const mobileBottomLabels = new Set(['About', 'Programs', 'Schedule', 'Gallery']);
+  const mobileBottomItems = navigation.items.filter((item) => mobileBottomLabels.has(item.label));
+  const mobileTopItems = navigation.items.filter((item) => !mobileBottomLabels.has(item.label));
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 14);
@@ -92,19 +95,34 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
       {menuOpen ? (
         <div className="px-5 pb-4 sm:px-6 lg:hidden">
           <div className="mx-auto max-w-7xl rounded-[1.75rem] border border-white/80 bg-white/90 p-4 shadow-[0_30px_60px_-40px_rgba(15,23,42,0.45)] backdrop-blur-2xl">
-            <nav className="flex flex-col gap-2">
-              {navigation.items.map((item) => (
-                <Link
-                  key={item.href}
-                  className="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-950"
-                  href={item.href}
-                >
-                  {item.label}
-                </Link>
-              ))}
-              <Button asChild className="mt-2 w-full">
-                <Link href={navigation.primaryCta.href}>{navigation.primaryCta.label}</Link>
-              </Button>
+            <nav className="flex flex-col gap-4">
+              <div className="grid grid-cols-2 gap-2">
+                {mobileTopItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    className="rounded-2xl px-4 py-3 text-center text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-950"
+                    href={item.href}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+                <Button asChild className="h-auto min-h-12 w-full">
+                  <Link href={navigation.primaryCta.href}>{navigation.primaryCta.label}</Link>
+                </Button>
+              </div>
+              <div className="border-t border-slate-200/80 pt-4">
+                <div className="grid grid-cols-2 gap-2">
+                  {mobileBottomItems.map((item) => (
+                    <Link
+                      key={item.href}
+                      className="rounded-2xl px-4 py-3 text-center text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-950"
+                      href={item.href}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </nav>
           </div>
         </div>

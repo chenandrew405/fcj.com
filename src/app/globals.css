@@ -193,6 +193,24 @@ textarea {
   border: 1px solid rgba(37, 99, 235, 0.12);
 }
 
+.phone-scroll-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+.phone-scroll-row::-webkit-scrollbar {
+  height: 0;
+}
+
+.phone-scroll-card {
+  min-width: min(85vw, 22rem);
+  scroll-snap-align: start;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -208,6 +226,18 @@ textarea {
 }
 
 @media (min-width: 768px) {
+  .phone-scroll-row {
+    display: grid;
+    overflow: visible;
+    padding-bottom: 0;
+    scroll-snap-type: none;
+  }
+
+  .phone-scroll-card {
+    min-width: 0;
+    scroll-snap-align: none;
+  }
+
   .layout-shell {
     padding-top: var(--layout-pt-tablet, var(--layout-pt-mobile, 5rem));
     padding-bottom: var(--layout-pb-tablet, var(--layout-pb-mobile, 5rem));

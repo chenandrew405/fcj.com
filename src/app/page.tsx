@@ -124,9 +124,9 @@ export default function HomePage() {
             </Reveal>
           </div>
 
-          <div className="layout-grid layout-grid-cols mt-10 grid" style={getLayoutBoxStyle(homeHeroLayout.gridSecondary)}>
+          <div className="layout-grid layout-grid-cols phone-scroll-row mt-10" style={getLayoutBoxStyle(homeHeroLayout.gridSecondary)}>
             {heroContent.stats.map((stat) => (
-              <div key={stat.label} className="layout-card-size premium-card interactive-card flex min-h-[8rem] flex-col justify-between lg:min-h-[7rem]" style={getLayoutBoxStyle(homeHeroLayout.cardSecondary)}>
+              <div key={stat.label} className="phone-scroll-card layout-card-size premium-card interactive-card flex min-h-[8rem] flex-col justify-between lg:min-h-[7rem]" style={getLayoutBoxStyle(homeHeroLayout.cardSecondary)}>
                 <p className="font-mono text-lg font-semibold text-slate-950">{stat.value}</p>
                 <p className="mt-2 text-sm font-medium text-slate-700">{stat.label}</p>
                 <p className="mt-2 text-sm leading-6 text-slate-500">{stat.description}</p>
@@ -146,9 +146,9 @@ export default function HomePage() {
               title={aboutContent.pageIntro.title}
             />
           </Reveal>
-          <div className="layout-grid layout-grid-cols mt-10 grid" style={getLayoutBoxStyle(homeAboutPreviewLayout.grid)}>
+          <div className="layout-grid layout-grid-cols phone-scroll-row mt-10" style={getLayoutBoxStyle(homeAboutPreviewLayout.grid)}>
             {[aboutContent.mission, aboutContent.vision].map((item, index) => (
-              <Reveal key={item.title} delay={index * 0.08}>
+              <Reveal key={item.title} className="phone-scroll-card" delay={index * 0.08}>
                 <article className="layout-card-size premium-card interactive-card flex h-full flex-col" style={getLayoutBoxStyle(homeAboutPreviewLayout.card)}>
                   <p className="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-[#2563EB]">{siteContent.name}</p>
                   <h3 className="mt-4 font-mono text-2xl font-semibold text-slate-950">{item.title}</h3>
@@ -156,7 +156,7 @@ export default function HomePage() {
                 </article>
               </Reveal>
             ))}
-            <Reveal delay={0.16}>
+            <Reveal className="phone-scroll-card" delay={0.16}>
               <article className="layout-card-size premium-card interactive-card flex h-full flex-col overflow-hidden" style={getLayoutBoxStyle(homeAboutPreviewLayout.card)}>
                 <div className="relative h-full min-h-72 overflow-hidden rounded-[1.25rem]">
                   <Image alt={aboutContent.storyImages[0]?.alt ?? ''} className="object-cover" fill sizes="30vw" src={aboutContent.storyImages[0]?.src ?? '/images/classroom.jpg'} />
@@ -177,10 +177,10 @@ export default function HomePage() {
               title={programsContent.sectionIntro.title}
             />
           </Reveal>
-          <div className="layout-grid layout-grid-cols mt-10 grid" style={getLayoutBoxStyle(homeProgramsPreviewLayout.grid)}>
+          <div className="layout-grid layout-grid-cols phone-scroll-row mt-10" style={getLayoutBoxStyle(homeProgramsPreviewLayout.grid)}>
             {programsContent.programs.slice(0, 3).map((program, index) => {
               return (
-                <Reveal key={program.id} delay={index * 0.08}>
+                <Reveal key={program.id} className="phone-scroll-card" delay={index * 0.08}>
                   <article className="layout-radius premium-card interactive-card overflow-hidden" style={getLayoutBoxStyle(homeProgramsPreviewLayout.card)}>
                     <div className="relative aspect-[16/11] overflow-hidden bg-slate-100">
                       {program.imagePlaceholderText ? (
@@ -281,9 +281,9 @@ export default function HomePage() {
               title={galleryContent.sectionIntro.title}
             />
           </Reveal>
-          <div className="layout-grid layout-grid-cols mt-10 grid" style={getLayoutBoxStyle(homeGalleryPreviewLayout.grid)}>
+          <div className="layout-grid layout-grid-cols phone-scroll-row mt-10" style={getLayoutBoxStyle(homeGalleryPreviewLayout.grid)}>
             {galleryContent.events.slice(0, 3).map((event, index) => (
-              <Reveal key={event.id} delay={index * 0.08}>
+              <Reveal key={event.id} className="phone-scroll-card" delay={index * 0.08}>
                 <Link className="group block" href={`/gallery/${event.id}`}>
                   <article className="layout-radius premium-card interactive-card flex h-full flex-col overflow-hidden" style={getLayoutBoxStyle(homeGalleryPreviewLayout.card)}>
                     <div className="relative aspect-[16/11] overflow-hidden">
@@ -318,9 +318,9 @@ export default function HomePage() {
               title={testimonialsContent.sectionIntro.title}
             />
           </Reveal>
-          <div className="layout-grid layout-grid-cols mt-10 grid" style={getLayoutBoxStyle(homeTestimonialsLayout.grid)}>
+          <div className="layout-grid layout-grid-cols phone-scroll-row mt-10" style={getLayoutBoxStyle(homeTestimonialsLayout.grid)}>
             {testimonialsContent.items.map((testimonial, index) => (
-              <Reveal key={`${testimonial.name}-${testimonial.role}`} delay={index * 0.08}>
+              <Reveal key={`${testimonial.name}-${testimonial.role}`} className="phone-scroll-card" delay={index * 0.08}>
                 <article className="layout-card-size premium-card interactive-card flex h-full flex-col" style={getLayoutBoxStyle(homeTestimonialsLayout.card)}>
                   <p className="flex-1 text-lg leading-8 text-slate-700">&ldquo;{testimonial.quote}&rdquo;</p>
                   <div className="mt-6 border-t border-slate-200 pt-5">
