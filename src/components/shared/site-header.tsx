@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { BookOpen, Calendar, HeartHandshake, Home, Images, Info, Mail, Menu, type LucideIcon, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
-import { TerminalType } from '@/components/shared/terminal-type';
 import { Button } from '@/components/ui/button';
 import { headerLayout } from '@/lib/layout';
 import { getLayoutBoxStyle } from '@/lib/layout-utils';
@@ -160,7 +159,7 @@ export const SiteHeader = ({ navigation, site }: SiteHeaderProps) => {
           <div className="flex flex-1 items-center justify-center px-2 lg:flex-none lg:px-0">
             <div className="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/80 px-3 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur-sm">
               <CurrentIcon className="size-4 text-[#2563EB]" aria-hidden="true" />
-              <TerminalType key={currentLabel} className="truncate" delay={0} text={currentLabel} />
+              <span className="truncate">{currentLabel}</span>
             </div>
           </div>
 
